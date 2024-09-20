@@ -18,6 +18,11 @@ But wait! The product table has some bad data (a few NULL values).
 Find the NULLs and then using COALESCE, replace the NULL with a blank for the first problem, and 'unit' for the second problem. 
 
 **HINT**: keep the syntax the same, but edited the correct components with the string. The `||` values concatenate the columns into strings. Edit the appropriate columns -- you're making two edits -- and the NULL rows will be fixed. All the other rows will remain the same.
+  Solution:
+      SELECT 
+      product_name || ', ' || COALESCE(product_size, ' ')|| ' (' || COALESCE(product_qty_type, ' ') || ')'
+      FROM product;
+    ![alt text](image.png)
 
 # Windowed Functions
 1. Write a query that selects from the customer_purchases table and numbers each customer’s visits to the farmer’s market (labeling each market date with a different number). Each customer’s first visit is labeled 1, second visit is labeled 2, etc. 
