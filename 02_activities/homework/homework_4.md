@@ -47,16 +47,16 @@ You can either display all rows in the customer_purchases table, with the counte
 3. Using a COUNT() window function, include a value along with each row of the customer_purchases table that indicates how many different times that customer has purchased that product_id.
 <br> **Solution:** <br>
        DROP TABLE IF EXISTS temp.customer_purchases;  <br>
-       CREATE TEMP TABLE temp.customer_purchases AS  <br> <br>
-
+       CREATE TEMP TABLE temp.customer_purchases AS  <br> 
+<br>
        SELECT customer_id,  product_id  <br>
-       FROM customer_purchases;  <br> <br>
-
-      SELECT *, <br>
-      Count(product_id) AS 'No. of Times product purchased' <br>
-      FROM temp.customer_purchases <br>
-      GROUP BY product_id, customer_id <br>
-      ORDER BY customer_id; <br>
+       FROM customer_purchases;   
+<br>
+       SELECT *, <br>
+       Count(product_id) AS 'No. of Times product purchased' <br>
+       FROM temp.customer_purchases <br>
+       GROUP BY product_id, customer_id <br>
+       ORDER BY customer_id; <br>
       ![alt text](image-3.png) 
 
 # String manipulations
@@ -73,7 +73,7 @@ You can either display all rows in the customer_purchases table, with the counte
        ( SUBSTR(product_name, NULLIF(INSTR(product_name,'-'),0)+2,43))  AS 'Description'  <br> <br>
 
        FROM product;    <br>
-       ![alt text](image-4.png)
+      ![alt text](image-4.png)
 
 # UNION
 1. Using a UNION, write a query that displays the market dates with the highest and lowest total sales.
