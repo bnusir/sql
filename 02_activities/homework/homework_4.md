@@ -55,7 +55,6 @@ You can either display all rows in the customer_purchases table, with the counte
            FROM temp.customer_purchases <br>
            GROUP BY product_id, customer_id <br>
            ORDER BY customer_id; <br>
-
           ![alt text](image-3.png) 
 
 # String manipulations
@@ -67,10 +66,9 @@ You can either display all rows in the customer_purchases table, with the counte
 
 **HINT**: you might need to use INSTR(product_name,'-') to find the hyphens. INSTR will help split the column. 
 <br> <br> **Solution:** <br>
-       SELECT product_name,   
-<br>   ( SUBSTR(product_name, NULLIF(INSTR(product_name,'-'),0)+2,43))  AS 'Description'   
-<br>   FROM product;    
-<br>
+       SELECT product_name,  <br> 
+       ( SUBSTR(product_name, NULLIF(INSTR(product_name,'-'),0)+2,43))  AS 'Description'   <br>
+       FROM product;    <br>
       ![alt text](image-4.png)
 
 # UNION
