@@ -51,8 +51,7 @@ You can either display all rows in the customer_purchases table, with the counte
 <br>
        SELECT customer_id,  product_id  <br>
        FROM customer_purchases;   
-<br>
-       SELECT *, <br>
+<br>   SELECT *, <br>
        Count(product_id) AS 'No. of Times product purchased' <br>
        FROM temp.customer_purchases <br>
        GROUP BY product_id, customer_id <br>
@@ -68,11 +67,10 @@ You can either display all rows in the customer_purchases table, with the counte
 
 **HINT**: you might need to use INSTR(product_name,'-') to find the hyphens. INSTR will help split the column. 
 <br> **Solution:** <br>
-       SELECT product_name,  <br> <br>
-
-       ( SUBSTR(product_name, NULLIF(INSTR(product_name,'-'),0)+2,43))  AS 'Description'  <br> <br>
-
-       FROM product;    <br>
+       SELECT product_name,  <br> 
+<br>   ( SUBSTR(product_name, NULLIF(INSTR(product_name,'-'),0)+2,43))  AS 'Description'  <br> 
+<br>   FROM product;    
+<br>
       ![alt text](image-4.png)
 
 # UNION
