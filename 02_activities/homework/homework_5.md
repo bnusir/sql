@@ -15,20 +15,22 @@
 <br>**SOLUTION**<br>
       DROP TABLE IF EXISTS product_units;
 <br>
-      CREATE TABLE product_units AS <br>
-      SELECT * <br>
-      ,CURRENT_TIMESTAMP AS 'Snapshot_Timestamp' <br>
-      FROM product <br>
-       WHERE product_qty_type = 'unit'; 
+          CREATE TABLE product_units AS <br>
+          SELECT * <br>
+          ,CURRENT_TIMESTAMP AS 'Snapshot_Timestamp' <br>
+          FROM product <br>
+          WHERE product_qty_type = 'unit'; 
  <br> 
-      SELECT * FROM product_units; <br>
-      ![alt text](image.png)
+          SELECT * FROM product_units; <br>
+
+     ![alt text](image.png)
 
 2. Using `INSERT`, add a new row to the table (with an updated timestamp). This can be any product you desire (e.g. add another record for Apple Pie). 
 <br>**SOLUTION**<br>
        INSERT INTO product_units <br>
        VALUES(999, 'Apple PIE', 'meduim', 6, 'unit', CURRENT_TIMESTAMP); <br>
        SELECT * FROM product_units WHERE product_id = 999;   <br>
+
        ![alt text](image-1.png)
 
 # DELETE 
@@ -37,7 +39,8 @@
 **HINT**: If you don't specify a WHERE clause, [you are going to have a bad time](https://imgflip.com/i/8iq872).
 <br>**SOLUTION**<br>
        DELETE FROM product_units WHERE product_id = 999; <br>
-       ![alt text](image-2.png)
+
+    ![alt text](image-2.png)
 
 # UPDATE
 1. We want to add the current_quantity to the product_units table. First, add a new column, `current_quantity` to the table using the following syntax.
@@ -53,4 +56,5 @@ Then, using `UPDATE`, change the current_quantity equal to the **last** `quantit
 <br>**SOLUTION**<br>
       ALTER TABLE product_units <br>
       ADD current_quantity INT; <br>
-      ![alt text](image-3.png)
+      
+    ![alt text](image-3.png)
