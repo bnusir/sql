@@ -21,10 +21,12 @@
   - **Date Table**: 
     - Must exist with typical columns.
     - Must have correct relationships with other relevant tables indicated.
-
+<br><br> **Solution: <br>
+         ![alt text](image-1.png)
 ## Question 2
 - Employee Shift Table exists, and we can discern morning/evening shifts from its design**
-
+<br><br> **Solution: <br>
+           ![alt text](image-2.png)
 ## Question 3: 
 - **Two distinct architectures are proposed**
 - **One design for Customer Addresses table would retain changes**
@@ -33,11 +35,18 @@
     - Both Correct (Complete)
     - One Wrong (Incomplete)
     - Both Wrong (Incomplete)
+<br><br> **Solution: <br>
+           ![alt text](image-3.png)
 
 ## Question 4: 
 - **AdventureWorks ERD has been examined**
 - **Two interesting differences between participant ERDs and AdventureWorks ERDs highlighted**
 - **Student reflection on differences between the ERDs**
+<br><br> **Solution: <br>
+
+          1.Participant ERDs are more specialized (tailored for specific applications or projects), while AdventureWorks ERDs provide a comprehensive overview suitable for a variety of business scenarios. <br>
+          2. Participant-ERD vary in complexity depending on the project's needs While adventureWorks generally more complex (gives more features & capabilities) <br>
+          
 
 ## Criteria
 
