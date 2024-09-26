@@ -4,10 +4,12 @@
 Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
-
+<br><br>**Solution:** <br>
+          ![alt text](image.png)
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
-
+<br><br>**Solution:** <br>
+        ![alt text](image-2.png)
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
@@ -16,8 +18,8 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
-```
-
+<br><br> **Solution:** <br>
+![alt text](image-3.png)
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
@@ -25,6 +27,9 @@ Highlight at least two differences between it and your ERD. Would you change any
 ```
 Your answer...
 ```
+<br><br> **Solution:** <br>
+1. The AdventureWorks Schema is more advanced and mor complicated and includes a lot of tables wmore sophisticated <br>
+2. My ERD is very simple and do not cover many departments (production, HR, ...etc.) <br>
 
 # Criteria
 
